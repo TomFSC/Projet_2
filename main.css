@@ -8,14 +8,18 @@
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
  }
 
+ body,
+ html{
+     display: block;
+     margin: auto 25px;
+ }
+
  header{
     display: flex;
-    height: 100px;
+    height: 70px;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 30px;
-    
-    
+    margin-left: 25px;
 }
 
 nav
@@ -33,16 +37,47 @@ nav
     text-decoration: none;
 }
 
-.menu1,
-.menu2{
+.element{
     text-decoration-color: #0065FC;
-    padding-top: 30px;
-    border-top: #FFF;
+    padding-top: 40px;
+    border-top: none;
     align-items: flex-end;
 }
-.menu1:hover{
+.element:hover{
     border-top: 2px solid #0065FC;
 }
-.menu2:hover{
-    border-top: 2px solid #0065FC;
+
+.titre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: none;
+    
+}
+h2{
+    display: flex;
+    font-size: medium;
+}
+p{
+    display: flex;
+    font-size: small;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    border: black solid 1px;
+    border-radius: 30px;
+    height: 40px;
+    width: 320px;
+    
+}
+
+span{
+    display: flex;
+    justify-content: end;
+    color: #FFF;
+    font-weight: bold ;
+    background-size: auto;
+    background-color: #0065FC;
 }

@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>BOOKI</title>
+        <html lang="fr">
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scale=no"/>
         <link rel="stylesheet" href="main.css"/>
@@ -14,12 +15,25 @@
 
     <body>    
         <header><!--En-tête-->
-                <section class="logo"><img src="images/Booki_mini.png" alt="logo_booki"/></section>
+            <section class="logo"><img src="images/Booki_mini.png" alt="logo_booki"/></section>
 
-                <nav class="navigation"><!--Menu de navigation-->
-                    <p class="menu2"><a href="#hebergements" title="hebergements">Hébergements</a></p>
-                    <p class="menu1"><a href="#activites" title="activites">Activités</a></p>
-                </nav>
+            <nav class="navigation"><!--Menu de navigation-->
+                <p class="element"><a href="#hebergements">Hébergements</a></p>
+                <p class="element"><a href="#activites">Activités</a></p>
+            </nav>
         </header>
+
+        <section class="titre">        <!--Titre-->
+            <h2>Trouvez votre hébergements pour des vacances de rêves</h2>
+            <p class="texte">En plein centre ville ou en pleine nature</p>
+        </section>
+
+        <section id= "recherche"> <!--Recherche-->        
+            <form method="post" action=""traitement.php>
+                <p><i class="fa-solid fa-location-dot"></i>
+                <input type="search" value="Marseille,France"/>
+                <span>Rechercher</span></p>
+            </form>   
+        </section>
     </body>
 </html>
