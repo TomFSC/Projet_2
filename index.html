@@ -24,16 +24,145 @@
         </header>
 
         <section class="titre">        <!--Titre-->
-            <h2>Trouvez votre hébergements pour des vacances de rêves</h2>
+            <p><h3>Trouvez votre hébergements pour des vacances de rêves</h3></p>
             <p class="texte">En plein centre ville ou en pleine nature</p>
         </section>
 
-        <section id= "recherche"> <!--Recherche-->        
-            <form method="post" action=""traitement.php>
-                <p><i class="fa-solid fa-location-dot"></i>
-                <input type="search" value="Marseille,France"/>
-                <span>Rechercher</span></p>
-            </form>   
+        <!--Recherche-->        
+        <section class="recherche">    
+                <form method="post" action=""traitement.php>
+                    <p class="location"><i class="fa-solid fa-location-dot"></i></p>
+                    <p><input type="search" value="Marseille,France"/>
+                    <span>Rechercher</span></p>
+                </form>
         </section>
+
+        <!--Filtres-->
+        <section class="filtres">
+                <ol>
+                    <li><h4>Filtres</h4></li>
+                    <li class="element2"><i class="fa-regular fa-money-bill-wave"></i><p>Economique</p></li>
+                    <li class="element2"><i class="fa-solid fa-child-reaching"></i><p>Familial</p></li>
+                    <li class="element2"><i class="fa-solid fa-heart"></i><p>Romantique</p></li>
+                    <li class="element2"><i class="fa-solid fa-dog"></i><p>Animaux autorisés</p></li>
+                </ol>
+        </section>
+
+        <!--Information-->
+        <section class="infos">
+                <i class="fa-regular fa-circle-info"><p>Plus de 500 logements sont disponibles dans cette ville</i></p>
+        </section>
+
+        <!--Hébergements-->
+        <section class="hebergements">
+            
+            <section class="resultats"><!--Annonces resultats recherche-->
+
+                <h3>Hébergements à Marseille</h3>
+
+                <a href="#">
+                    <article class="annonce"><img src="images/hebergements/auberge_la_cannebière.jpg" title="Auberge La Cannebière"/></article>
+                        <figcaption>
+                            <h4>Auberge La Cannebière</h4>
+                            <p class="texte">Nuit à partir de <strong>25€</strong></p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </figcaption>
+                </a>
+                <a href="#">
+                    <article class="annonce"><img src="images/hebergements/hotel_du_port.jpg" title="Hôtel du Port"/></article>
+                        <figcaption>
+                            <h4>Hôtel du Port</h4>
+                            <p class="texte">Nuit à partir de <strong>52€</strong></p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </figcaption>
+                </a>
+                <a href="#">
+                    <article class="annonce"><img src="images/hebergements/hotel_les_mouettes.jpg" title="Hôtel Les Mouettes"/></article>
+                        <figcaption>
+                            <h4>Hôtel Les Mouettes</h4>
+                            <p class="texte">Nuit à partir de <strong>76€</strong></p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </figcaption>
+                </a>
+                <a href="#">
+                    <article class="annonce"><img src="images/hebergements/hotel_de_la_mer.jpg" title="Hôtel de la mer"/></article>
+                        <figcaption>
+                            <h4>Hôtel de la mer</h4>
+                            <p class="texte">Nuit à partir de <strong>46€</strong></p>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                        </figcaption>
+                </a>
+                <a href="#">
+                    <article class="annonce"><img src="images/hebergements/auberge_le_panier.jpg" title="Auberge Le Panier"/></article>
+                    <figcaption>
+                        <h4>Auberge Le Panier</h4>
+                        <p class="texte">Nuit à partir de <strong>23€</strong></p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    </figcaption>
+                </a>
+                <a href="#">
+                    <article class="annonce"><img src="images/hebergements/hotel_chez_amina.jpg" title="Hôtel chez Amina"/></article>
+                    <figcaption>
+                        <h4>Hôtel chez Amina</h4>
+                        <p class="texte">Nuit à partir de <strong>96€</strong></p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </figcaption>
+                </a>
+            </section>
+
+            <section class="populaires"> <!--Anonces les plus populaires-->
+
+                <p class="element3"><h3>Les plus populaires</h3></p><i class="fa-solid fa-chart-line"></i></p>
+
+                <a href="#">
+                    <article class="favoris"><img src="images/populaires/hotel_le_soleil_du_matin.jpg" title="Hôtel Le soleil du matin"/></article>
+                    <figcaption>
+                        <h4>Hôtel Le soleil du matin</h4>
+                        <p class="texte">Nuit à partir de <strong>128€</strong></p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </figcaption>
+                </a>
+                <a href="#">
+                    <article class="favoris"><img src="images/populaires/au_coeur_de_l_eau.jpg" title="Au coeur de l'eau Chambres d'hôtes"/></article>
+                    <figcaption>
+                        <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                        <p class="texte">Nuit à partir de <strong>71€</strong></p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    </figcaption>
+                </a>
+                <a href="#">
+                    <article class="favoris"><img src="images/populaires/hotel_tout_bleu_et_blanc.jpg" title="Hôtel Tout Bleu et Blanc"/></article>
+                    <figcaption>
+                        <h4>Hôtel Tout Bleu et Blanc</h4>
+                        <p class="texte">Nuit à partir de <strong>68€</strong></p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                    </figcaption>
+                </a>   
+            </section>
+        </section>
+
+        <section class="activites"> <!--Activités à Marseille-->
+
+        </section>
+
+        <footer>
+            <ol class="a_propos">
+                <li><h3>A propos</h3></li>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et confidentialité</li>
+            </ol>
+            <ol class="informations">
+                <li><h3>Nos hébergements</h3></li>
+                <li>Charte qualité</li>
+                <li>Soumettre votre hôtel</li>
+            </ol>
+            <ol class="aide">
+                <li><h3>Assistance</h3></li>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ol>
+        </footer>
+                
     </body>
 </html>
