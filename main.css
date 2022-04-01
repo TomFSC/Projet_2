@@ -28,19 +28,23 @@ h4{
      display: flex;
      
  }
- h5{
-     margin: 0px;
-     font-weight: bold;
+.anonces,
+.favoris{
+     text-decoration: none;
      color: black;
 }
-p{
+.texte{
     margin: 0px;
-    font-size: smaller;
+    font-size: 12px;
     color: black;
 }
 a{
     text-decoration: none;
 }
+.fas{
+    color: #0065FC;
+}
+
 
     /*Header*/
  header{
@@ -167,7 +171,7 @@ h4{
 
     /*Hébergements*/
 #hebergements{
-    justify-content: end;
+    justify-content: space-between;
     margin-left: 0;
     margin-right: 0;
 }
@@ -175,34 +179,56 @@ h4{
     /*Resultats*/
 .resultats{
     flex-direction: column;
-    row-gap: 25px;
-    border-radius: 15px;
+    justify-items: space-between;
+    gap: 25px;
+    border-radius: 20px;
     background-color: #F2F2F2;
-    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .groupe{
     margin: auto;
     column-gap: 25px;
 }
-
+.groupe a,
 .anonces{
     flex-direction: column;
-    align-items: flex-start;
-    border: solid #FFF;
+    border: 4px solid #FFF;
     background-color: #FFF;
     border-radius: 15px;
 }
-.anonces img{
+.anonces{
+    justify-items: space-around;
+}
+.texte,
+.etoiles,
+.lieu{
+    margin-left: 5px;
+
+}
+.lieu{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.groupe img{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+}
+.lieu,
+.texte{
+    margin-bottom: 4px;
+}
+#hebergements h4{
+    justify-self: flex-end;
 }
 
     /*Favoris*/
 aside{
     flex-direction: column;
-    align-items: baseline;
-    border-radius: 15px;
+    align-items: center;
     justify-content: space-around;
+    border-radius: 15px;
+   
     background-color: #F2F2F2;
 }
 #populaires{
