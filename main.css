@@ -23,6 +23,8 @@ aside,
 #populaires,
 .favoris,
 .description,
+.photos,
+#activites,
 div h3,
 h4{
      display: flex;
@@ -141,32 +143,32 @@ h4{
 
 }
 .criteres{
-    justify-content: space-between;
     align-items: center;
     height: 30px;
     margin-right: 20px;
     padding-right: 10px;
     border: solid #F2F2F2;
-    border-width: 2px;
     border-radius: 30px;
 }
-#icones{
-    padding-right: 10px;
-}
-.criteres .fas{
-    padding: 7px 7px;
+.icones{
+    border: solid #DEEBFF 18px;
     border-radius: 30px;
-    background-color: #0065FC;
-    opacity: 0.3;
+    margin-left: -2px;
 }
-
+.icones .fas{
+    position: absolute;
+    display: flex;
+    
+    
+}
     /*Infos*/
 .infos{
     display: flex;
     max-width: fit-content;
-    align-items: center;
-    column-gap: 15px;
+    align-items: baseline;
+    column-gap: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
     /*Hébergements*/
@@ -207,7 +209,7 @@ h4{
 
 }
 .lieu{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bolder;
 }
 .groupe img{
@@ -221,37 +223,74 @@ h4{
 #hebergements h4{
     justify-self: flex-end;
 }
+.groupe a{
+    box-shadow: 3px 3px 10px lightgrey;
+}
 
     /*Favoris*/
 aside{
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    align-items: baseline;
+    gap: 25px;
     border-radius: 15px;
-   
     background-color: #F2F2F2;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 20px;
 }
 #populaires{
-    align-items:center;
+    align-items: center;
+    padding-left: 15px;
 }
+#populaires h3{
+    padding-right: 100px;
+}
+
 .favoris{
     border-radius: 15px;
     border: solid #FFF;
     background-color: #FFF;
     margin-left: 15px;
+    box-shadow: 3px 3px 10px lightgrey;
 }
 .favoris img{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    margin-right: 10px;
 }
 .description{
     flex-direction: column;
 }
+.favoris .etoiles{
+    padding-top: 35px ;
+}
 
     /*Activités*/
 #activites{
-    border: solid black;
-    height: 300px;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.photos{
+    justify-content: space-around;
+}
+.sites,
+.grande_carte,
+.petite_carte{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px lightgrey;
+}
+
+#activites p{
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+.visites{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
     /*Footer*/
