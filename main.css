@@ -128,11 +128,11 @@ button{
     /*Filtres*/
 .filtres{
     flex-direction: row;
-    align-content: center;
+    align-items: center;
 }
 
 h4{
-    align-self: start;
+    margin: 0;
 }
 
 .filtres ol{
@@ -144,31 +144,50 @@ h4{
 }
 .criteres{
     align-items: center;
-    height: 30px;
+    height: 40px;
     margin-right: 20px;
     padding-right: 10px;
     border: solid #F2F2F2;
     border-radius: 30px;
 }
 .icones{
-    border: solid #DEEBFF 18px;
+    width: 40px;
+    height: 40px;
+    border: solid #DEEBFF;
     border-radius: 30px;
-    margin-left: -2px;
+    margin-left: -3px;
+    background-color: #DEEBFF;
+    margin-right: 10px;
 }
 .icones .fas{
-    position: absolute;
     display: flex;
-    
-    
+    justify-content: center;
+    padding: 10px;
+}
+.criteres:hover{
+    background-color: #F2F2F2;
+    box-shadow: 5px 5px 10px #0065FC;
 }
     /*Infos*/
 .infos{
     display: flex;
-    max-width: fit-content;
     align-items: baseline;
     column-gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.infos .texte{
+    font-size: 14px;
+}
+.infos .fas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    border: solid #F2F2F2 2px;
+    border-radius: 15px;
+    padding: 5px;
 }
 
     /*Hébergements*/
@@ -187,6 +206,7 @@ h4{
     background-color: #F2F2F2;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 25px;
 }
 .groupe{
     margin: auto;
@@ -231,26 +251,27 @@ h4{
 aside{
     flex-direction: column;
     align-items: baseline;
-    gap: 25px;
+    gap: 20px;
     border-radius: 15px;
     background-color: #F2F2F2;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 25px;
     margin-left: 20px;
 }
 #populaires{
     align-items: center;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-bottom: 20px;
 }
 #populaires h3{
-    padding-right: 100px;
+    padding-right: 90px;
 }
 
 .favoris{
     border-radius: 15px;
     border: solid #FFF;
     background-color: #FFF;
-    margin-left: 15px;
     box-shadow: 3px 3px 10px lightgrey;
 }
 .favoris img{
@@ -260,9 +281,11 @@ aside{
 }
 .description{
     flex-direction: column;
+    padding-top: 10px;
 }
 .favoris .etoiles{
-    padding-top: 35px ;
+    padding-top: 45px;
+    padding-bottom: 10px;
 }
 
     /*Activités*/
@@ -273,7 +296,8 @@ aside{
     margin-bottom: 20px;
 }
 .photos{
-    justify-content: space-around;
+    justify-content: space-between;
+    
 }
 .sites,
 .grande_carte,
