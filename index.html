@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css"/>
         <link rel="stylesheet" href="normalize.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -18,8 +19,8 @@
                 <div class="logo flex"><img src="images/Booki_mini.png" alt="logo_booki"/></div>
 
                 <nav class="navigation flex"><!--Menu de navigation-->
-                    <p class="element"><a href="#hebergements">Hébergements</a></p>
-                    <p class="element"><a href="#activites">Activités</a></p>
+                    <p class="element flex"><a href="#hebergements">Hébergements</a></p>
+                    <p class="element flex"><a href="#activites">Activités</a></p>
                 </nav>
             </header>
 
@@ -33,7 +34,10 @@
             <div class="recherche flex">    
                         <label class="flex"><i class="fa-solid fa-location-dot"></i></label>
                         <input class="flex" type="search" placeholder="Marseille,France"/>
-                        <button>Rechercher</button>
+                        <button>
+                            <div class="visuel1">Rechercher</div>
+                            <div class="visuel2"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        </button>
             </div>
 
             <!--Filtres-->
