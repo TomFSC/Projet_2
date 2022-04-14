@@ -3,7 +3,7 @@
     <head>
         <title>BOOKI</title>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scale=0"/>
         <link rel="stylesheet" href="main.css"/>
         <link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css"/>
         <link rel="stylesheet" href="normalize.css"/>
@@ -18,9 +18,9 @@
             <header class="flex"><!--En-tête-->
                 <div class="logo flex"><img src="images/Booki_mini.png" alt="logo_booki"/></div>
 
-                <nav class="navigation flex"><!--Menu de navigation-->
-                    <p class="element flex"><a href="#hebergements">Hébergements</a></p>
-                    <p class="element flex"><a href="#activites">Activités</a></p>
+                <nav class="flex"><!--Menu de navigation-->
+                    <div class="element flex"><a href="#hebergements"><p class="flex">Hébergements</p></a></div>
+                    <div class="element flex"><a href="#activites"><p class="flex">Activités</p></a></div>
                 </nav>
             </header>
 
@@ -35,8 +35,8 @@
                         <label class="flex"><i class="fa-solid fa-location-dot"></i></label>
                         <input class="flex" type="search" placeholder="Marseille,France"/>
                         <button>
-                            <div class="visuel1">Rechercher</div>
-                            <div class="visuel2"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <span class="visuel1">Rechercher</span>
+                            <span class="visuel2"><i class="fa-solid fa-magnifying-glass"></i></span>
                         </button>
             </div>
 
@@ -46,16 +46,16 @@
                     <ol class="flex">
                         <li class="criteres flex">
                             <div class="icones flex">
-                                <i class="fas fa-money-bill-wave fa-lg flex"></i></div>Economique</li>
+                                <i class="fas fa-money-bill-wave fa-lg flex"></i></div><p>Economique</p></li>
                         <li class="criteres flex">
                             <div class="icones flex">
-                                <i class="fas fa-child-reaching fa-lg flex"></i></div>Familial</li>
+                                <i class="fas fa-child-reaching fa-lg flex"></i></div><p>Familial</p></li>
                         <li class="criteres flex">
                             <div class="icones flex">
-                                <i class="fas fa-heart fa-lg flex"></i></div>Romantique</li>
+                                <i class="fas fa-heart fa-lg flex"></i></div><p>Romantique</p></li>
                         <li class="criteres flex">
                             <div class="icones flex">
-                                <i class="fas fa-dog fa-lg flex"></i></div>Animaux autorisés</li>
+                                <i class="fas fa-dog fa-lg flex"></i></div><p>Animaux autorisés</p></li>
                     </ol>
             </section>
 
@@ -174,42 +174,54 @@
             <div id="activites" class="flex"> <!--Activités à Marseille-->
                 <h3 class="flex">Activités à Marseille</h3>
                 <div class="photos">
-                    <div class="visite1 sites">
-                        <img src="images/activites/vieux_port.jpg" title="Vieux Port" alt="Vieux Port"/>
-                        <div class="lieu flex">
-                           Vieux Port
+                    <a class="visite1" href="#">
+                        <div class="sites flex">
+                            <img src="images/activites/vieux_port.jpg" title="Vieux Port" alt="Vieux Port"/>
+                            <div class="lieu flex">
+                               <p>Vieux Port</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="visite2 grande_carte">
-                        <img src="images/activites/fort_de_pomegues.jpg" title="Fort de Pomègues" alt="Fort de Pomègues"/>
-                        <div class="lieu flex">
-                           Fort de Pomègues
+                    </a>
+                    <a class="visite2" href="#">
+                        <div class="grande_carte flex">
+                            <img src="images/activites/fort_de_pomegues.jpg" title="Fort de Pomègues" alt="Fort de Pomègues"/>
+                            <div class="lieu flex">
+                                <p>Fort de Pomègues</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="visite3 petite_carte">
-                        <img src="images/activites/iles_du_frioul.jpg" title="Îles du Frioul" alt="Îles du Frioul"/>
-                        <div class="lieu flex">
-                           Îles du Frioul
+                    </a>
+                    <a class="visite3" href="#">
+                        <div class="petite_carte flex">
+                            <img src="images/activites/iles_du_frioul.jpg" title="Îles du Frioul" alt="Îles du Frioul"/>
+                            <div class="lieu flex">
+                               <p>Îles du Frioul</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="visite4 sites">
-                        <img src="images/activites/parc_national_des_calanques.jpg" title="Parc National des Calanques" alt="Parc National des Calanques"/>
-                        <div class="lieu flex">
-                           Parc National des Calanques
+                    </a>
+                    <a class="visite4" href="#">
+                        <div class="sites flex">
+                            <img src="images/activites/parc_national_des_calanques.jpg" title="Parc National des Calanques" alt="Parc National des Calanques"/>
+                            <div class="lieu flex">
+                               <p>Parc National des Calanques</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="visite5 petite_carte">
-                        <img src="images/activites/notre_dame_de_la_garde.jpg" title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde"/>
-                        <div class="lieu flex">
-                           Notre-Dame-de-la-Garde
+                    </a>
+                    <a class="visite5" href="#">
+                        <div class="petite_carte flex">
+                            <img src="images/activites/notre_dame_de_la_garde.jpg" title="Notre-Dame-de-la-Garde" alt="Notre-Dame-de-la-Garde"/>
+                            <div class="lieu flex">
+                               <p>Notre-Dame-de-la-Garde</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="visite6 grande_carte">
-                        <img src="images/activites/parc_longchamp.jpg" title="Parc Longchamp" alt="Parc Longchamp"/>
-                        <div class="lieu flex">
-                           Parc Longchamp
+                    </a>
+                    <a class="visite6" href="#">
+                        <div class="grande_carte flex">
+                            <img src="images/activites/parc_longchamp.jpg" title="Parc Longchamp" alt="Parc Longchamp"/>
+                            <div class="lieu flex">
+                               <p>Parc Longchamp</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div> 
