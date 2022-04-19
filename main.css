@@ -566,11 +566,13 @@ footer{
 
 body{
     overflow-x: hidden;
+    margin: 0;
 }
 
 #bloc_page{
     max-width: 100%;
     padding: 0;
+    margin: 0;
 }
     
         /*Header*/
@@ -594,20 +596,25 @@ body{
         margin: 15px 0 20px 0;
         gap: 0px;  
     }
+
+    .element a{
+        color:unset;
+        border-bottom: 0;
+    }
     
     .element{
         width: 50%;
-        justify-content: center;
         margin: 20px 0;
         padding: 0 0 10px 0;
         border-bottom: 2px solid #F2F2F2;   
     }
     
     .element:hover{
+        color: #0065FC;
         border-top: 0;
         border-bottom: 2px solid #0065FC;
     }
-    
+
         /*Titre*/
     #titre{
         height: fit-content;
@@ -701,10 +708,9 @@ body{
     .filtres ol{
         flex-wrap: wrap;
         list-style-type: none;
-        gap: 10px;
+        row-gap: 10px;
         padding: 0;
         margin-left: 0;
-        margin-right: 15px;
     }
     
     .criteres{
