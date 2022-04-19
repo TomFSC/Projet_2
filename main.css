@@ -441,7 +441,6 @@ li{
 
 .filtres h4{
     font-size: x-large;
-    color: #0065FC;
     margin: 10px 0 0 5px;
 }
 
@@ -485,10 +484,6 @@ aside{
     display: none;
 }
 
-#populaires h3{
-    color: #0065FC;
-}
-
 #populaires a{
     width: 60%;
 }
@@ -510,9 +505,6 @@ aside{
 
     /*Résultats*/
 
-.resultats h3{
-    color: #0065FC;
-}
 .resultats{
     order: 2;
     max-width: 80%;
@@ -537,10 +529,6 @@ aside{
     margin: auto;
 }
 
-#activites h3{
-    color: #0065FC;
-}
-
 #activites .lieu{
     
     min-height: 50px;
@@ -556,6 +544,10 @@ aside{
 footer{
     margin: auto;
     margin-top: 20px;
+}
+
+.aide{
+    margin-right: 0;
 }
 
 }
