@@ -755,11 +755,10 @@ body{
     
     .point{
         align-items: center;
-        width: 20px;
-        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
         border: solid #F2F2F2 2px;
         border-radius: 20px;
-        padding: 0 2px;
     }
     
         /*Hébergements*/
